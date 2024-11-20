@@ -1,0 +1,11 @@
+@import 'path-to-your-images-folder/john.jpg';
+@import 'path-to-your-images-folder/mary.jpg';
+@import 'path-to-your-images-folder/jane.jpg';
+
+$list-names: john, mary, jane;
+
+@each $name in $list-names {
+  .#{$name} {
+    background-image: url('#{$name}.jpg');
+  }
+}
